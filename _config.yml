@@ -1,1 +1,38 @@
 theme: jekyll-theme-cayman
+title: Pumatics
+description: Expert tutoring for AP, Honors, and College courses
+url: "https://pumatics.com"
+baseurl: ""
+
+# Business information
+business:
+  name: Pumatics
+  tagline: Elevating academic excellence through personalized tutoring
+  founded: 2020
+  locations:
+    - San Jose, CA
+    - Houston, TX
+    - Remote nationwide
+
+# Social media and contact
+social:
+  email: contact@pumatics.com
+  phone: (555) 123-4567
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: Services
+    url: /services
+  - title: About
+    url: /about
+  - title: Tutors
+    url: /tutors
+  - title: Contact
+    url: /contact
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
