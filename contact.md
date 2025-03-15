@@ -13,7 +13,7 @@ We're here to help you achieve your academic goals. Reach out to schedule a free
 <div class="contact-methods">
     <div class="contact-method">
         <h3>📧 Email</h3>
-        <p><a href="mailto:contact@pumatics.com">contact@pumatics.com</a></p>
+        <p><a href="mailto:info@pumatics.com">info@pumatics.com</a></p>
     </div>
     
     <div class="contact-method">
