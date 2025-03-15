@@ -19,18 +19,18 @@ social:
   email: contact@pumatics.com
   phone: (555) 123-4567
 
-# Navigation
-navigation:
-  - title: Home
-    url: /
-  - title: Services
-    url: /services
-  - title: About
-    url: /about
-  - title: Tutors
-    url: /tutors
-  - title: Contact
-    url: /contact
+# Navigation - simplified for coming soon page
+# navigation:
+#   - title: Home
+#     url: /
+#   - title: Services
+#     url: /services
+#   - title: About
+#     url: /about
+#   - title: Tutors
+#     url: /tutors
+#   - title: Contact
+#     url: /contact
 
 # Build settings
 markdown: kramdown

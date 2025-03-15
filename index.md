@@ -1,27 +1,21 @@
 ---
 layout: default
-title: Home
+title: Coming Soon
 ---
 
-# Welcome to Pumatics
+# Pumatics - Coming Soon
 
-## Elevating Academic Excellence Through Personalized Tutoring
+We're currently working on our new website for Pumatics tutoring services. Please check back soon!
+
+## About Pumatics
 
 Pumatics provides expert tutoring services for high school and college students. Our specialized focus on AP courses, honors classes, and college-level subjects helps students achieve their academic goals and build confidence in challenging subjects.
 
-### Our Expertise
+## Contact
 
-- **Advanced Placement (AP) Courses**: Calculus, Physics, Chemistry, Biology, Statistics, Computer Science, and more
-- **Honors Courses**: Mathematics, Sciences, English, History
-- **College Courses**: Undergraduate mathematics, sciences, engineering, and more
+For immediate assistance or to schedule tutoring, please contact us at:
 
-### Why Choose Pumatics?
+- Email: [contact@pumatics.com](mailto:contact@pumatics.com)
+- Phone: (555) 123-4567
 
-- **Experienced Educators**: Led by our founder and supported by a team of qualified tutors across the country
-- **Personalized Approach**: Customized learning plans tailored to each student's needs
-- **Proven Results**: Track record of improved grades and test scores
-- **Flexible Scheduling**: In-person and online sessions to accommodate busy schedules
-- **Nationwide Reach**: Started in San Jose, now based in Houston with tutors across the country
-
-[Schedule a Free Consultation](/contact){: .btn .btn-primary}
-[Learn About Our Services](/services){: .btn} 
+Thank you for your patience as we improve our online presence.
