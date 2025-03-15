@@ -18,7 +18,7 @@ We're here to help you achieve your academic goals. Reach out to schedule a free
     
     <div class="contact-method">
         <h3>📱 Phone</h3>
-        <p>(555) 123-4567</p>
+        <p>(650) 209-0336</p>
     </div>
     
     <div class="contact-method">
