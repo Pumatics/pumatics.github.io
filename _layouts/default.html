@@ -15,9 +15,11 @@
       <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
       
       <nav class="main-nav">
-        {% for item in site.navigation %}
-          <a href="{{ item.url }}" class="btn">{{ item.title }}</a>
-        {% endfor %}
+        {% if site.navigation %}
+          {% for item in site.navigation %}
+            <a href="{{ item.url }}" class="btn">{{ item.title }}</a>
+          {% endfor %}
+        {% endif %}
       </nav>
     </header>
 
