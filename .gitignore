@@ -1,0 +1,21 @@
+# Jekyll build files
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundler files
+.bundle/
+vendor/
+
+# macOS files
+.DS_Store
+
+# Ruby environment
+.ruby-version
+.ruby-gemset
+
+# Environment normalization
+/.bundle/
+/vendor/bundle
+/lib/bundler/man/ 
