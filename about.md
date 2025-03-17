@@ -28,7 +28,7 @@ At Pumatics, we believe that:
 
 ![Founder's Photo](/assets/images/founder.jpg)
 
-As the founder and lead educator at Pumatics, I bring my passion for education and extensive experience in teaching advanced subjects to every aspect of our tutoring services. With a background in [Your Educational Background], I've dedicated my career to helping students navigate challenging academic material and achieve their goals.
+As the founder and lead educator at Pumatics, I bring my passion for education and extensive experience in teaching advanced subjects to every aspect of our tutoring services. With a Ph.D. in Mathematics from Stanford University and over 15 years of teaching experience, I've dedicated my career to helping students navigate challenging academic material and achieve their goals.
 
 My teaching journey began in San Jose, where I worked with students struggling with advanced mathematics and science courses. Seeing the transformation in students when they finally grasped difficult concepts inspired me to expand this approach to help more students.
 
