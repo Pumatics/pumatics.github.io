@@ -19,20 +19,22 @@ social:
   email: info@pumatics.com
   phone: (650) 209-0336
 
-# Navigation - simplified for coming soon page
-# navigation:
-#   - title: Home
-#     url: /
-#   - title: Services
-#     url: /services
-#   - title: About
-#     url: /about
-#   - title: Tutors
-#     url: /tutors
-#   - title: Contact
-#     url: /contact
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: Services
+    url: /services
+  - title: About
+    url: /about
+  - title: Tutors
+    url: /tutors
+  - title: Contact
+    url: /contact
 
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-seo-tag
+
+github: [metadata]
