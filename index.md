@@ -1,21 +1,52 @@
 ---
 layout: default
-title: Coming Soon
+title: Home
 ---
 
-# Pumatics - Coming Soon
+# Welcome to Pumatics
 
-We're currently working on our new website for Pumatics tutoring services. Please check back soon!
+Expert tutoring services for high school and college students, specializing in AP courses, honors classes, and college-level subjects.
 
-## About Pumatics
+## Why Choose Pumatics?
 
-Pumatics provides expert tutoring services for high school and college students. Our specialized focus on AP courses, honors classes, and college-level subjects helps students achieve their academic goals and build confidence in challenging subjects.
+- **Expert Tutors**: Our team of qualified educators brings years of experience in their respective fields
+- **Personalized Learning**: Tailored instruction that matches your learning style and goals
+- **Flexible Options**: Choose between in-person or online tutoring sessions
+- **Proven Results**: Track record of helping students achieve their academic goals
+- **Comprehensive Support**: From AP courses to college-level subjects, we've got you covered
 
-## Contact
+## Our Services
 
-For immediate assistance or to schedule tutoring, please contact us at:
+We offer specialized tutoring in:
 
+### High School Programs
+- AP Courses (Calculus, Physics, Chemistry, Biology, and more)
+- Honors Classes
+- SAT/ACT Test Preparation
+
+### College Programs
+- STEM Subjects
+- Advanced Mathematics
+- Sciences
+- Computer Science
+
+[View All Services](/services){: .btn .btn-primary}
+
+## Get Started
+
+Ready to achieve your academic goals? Schedule a free consultation to discuss how we can help you succeed.
+
+[Schedule Consultation](/contact){: .btn .btn-primary}
+
+## Locations
+
+We serve students in:
+- Houston, TX (Main Office)
+- San Jose, CA
+- Remote sessions available nationwide
+
+## Contact Us
+
+Have questions? We're here to help:
 - Email: [info@pumatics.com](mailto:info@pumatics.com)
-- Phone: (555) 123-4567
-
-Thank you for your patience as we improve our online presence.
+- Phone: (650) 209-0336
