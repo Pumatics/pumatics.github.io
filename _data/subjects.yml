@@ -31,8 +31,8 @@ ap_honors:
     - AP Calculus BC
     - AP Physics 1
     - AP Physics 2
-    - AP Physics C: Mechanics
-    - AP Physics C: Electricity & Magnetism
+    - AP Physics C - Mechanics
+    - AP Physics C - Electricity & Magnetism
     - AP Chemistry
     - AP Biology
     - AP Computer Science Principles
@@ -52,8 +52,8 @@ college:
     - Introduction to Probability
     - Introduction to Statistics
     - Introduction to Abstract Mathematics
-    - Classical Physics: Mechanics
-    - Classical Physics: Electromagnetism
+    - Classical Physics - Mechanics
+    - Classical Physics - Electromagnetism
 
 programming:
   name: Computer Programming
