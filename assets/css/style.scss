@@ -98,7 +98,10 @@ body {
 .tutor-profile {
   display: flex;
   margin-bottom: var(--spacing-xl);
-  composes: card;
+  background-color: var(--light-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: var(--spacing-lg);
 }
 
 .tutor-image {
@@ -134,11 +137,16 @@ body {
 .contact-method {
   flex: 1;
   min-width: 250px;
-  composes: card;
+  background-color: var(--light-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: var(--spacing-lg);
 }
 
 .contact-form {
-  composes: card;
+  background-color: var(--light-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
   padding: var(--spacing-xl);
 }
 
