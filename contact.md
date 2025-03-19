@@ -24,7 +24,7 @@ We're here to help you achieve your academic goals. Reach out to schedule a free
 
 ## Schedule a Free Consultation
 
-Interested in our tutoring services? Schedule a free 30-minute consultation to discuss your academic goals and how we can help you achieve them.
+Interested in our tutoring services?
 
 <form action="https://formspree.io/f/{{ site.social.formspree_id }}" method="POST" class="contact-form">
     <div class="form-group">
@@ -66,5 +66,5 @@ Interested in our tutoring services? Schedule a free 30-minute consultation to d
         <input type="text" id="preferred-time" name="preferred-time" placeholder="e.g., Weekdays after 4pm">
     </div>
     
-    <button type="submit" class="btn btn-primary">Request Consultation</button>
-</form> 
+    <button type="submit" class="btn btn-primary" style="background-color: #3498db; color: #ffffff !important;">Request Consultation</button>
+</form>
