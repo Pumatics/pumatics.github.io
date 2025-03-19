@@ -1,0 +1,74 @@
+middle_school:
+  name: Middle School
+  subjects:
+    - Middle School Math
+    - Middle School General Science
+
+high_school:
+  name: High School
+  subjects:
+    - Algebra I
+    - Geometry
+    - Algebra II / Trigonometry
+    - Precalculus / Math Analysis
+    - Physics
+    - Chemistry
+    - Biology
+    - High School General Science
+    - Spanish
+
+ap_honors:
+  name: AP & Honors
+  subjects:
+    - Honors Geometry
+    - Honors Algebra II / Trigonometry
+    - Honors Precalculus / Math Analysis
+    - Honors Physics
+    - Honors Chemistry
+    - Honors Spanish
+    - AP Precalculus
+    - AP Calculus AB
+    - AP Calculus BC
+    - AP Physics 1
+    - AP Physics 2
+    - AP Physics C: Mechanics
+    - AP Physics C: Electricity & Magnetism
+    - AP Chemistry
+    - AP Biology
+    - AP Computer Science Principles
+    - AP Computer Science A
+    - AP Statistics
+    - AP Spanish Language and Culture
+    - AP Spanish Literature and Culture
+
+college:
+  name: College
+  subjects:
+    - Calculus I
+    - Calculus II
+    - Multivariable Calculus
+    - Elementary Linear Algebra
+    - Elementary Differential Equations
+    - Introduction to Probability
+    - Introduction to Statistics
+    - Introduction to Abstract Mathematics
+    - Classical Physics: Mechanics
+    - Classical Physics: Electromagnetism
+
+programming:
+  name: Computer Programming
+  subjects:
+    - Introduction to Python Programming
+    - Introduction to Java Programming
+    - Introduction to C/C++ Programming
+
+test_prep:
+  name: Test Prep
+  subjects:
+    - HSPT Math
+    - SSAT Math
+    - ISEE Math
+    - SAT Math
+    - ACT Math
+    - CBEST Math
+    - GRE Math 
