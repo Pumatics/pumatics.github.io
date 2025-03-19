@@ -6,7 +6,7 @@ permalink: /contact/
 
 # Contact Pumatics
 
-We're here to help you achieve your academic goals. Reach out to schedule a free consultation, learn more about our services, or join our team of tutors.
+We're here to help you achieve your academic goals. Reach out to schedule a free consultation or learn more about our services.
 
 ## Get in Touch
 
@@ -23,9 +23,7 @@ We're here to help you achieve your academic goals. Reach out to schedule a free
     
     <div class="contact-method">
         <h3>📍 Locations</h3>
-        <p>Houston, TX (Main Office)<br>
-        San Jose, CA<br>
-        Remote sessions available nationwide</p>
+        <p>Remote tutoring available nationwide</p>
     </div>
 </div>
 
@@ -33,7 +31,7 @@ We're here to help you achieve your academic goals. Reach out to schedule a free
 
 Interested in our tutoring services? Schedule a free 30-minute consultation to discuss your academic goals and how we can help you achieve them.
 
-<form action="https://formspree.io/f/your-formspree-endpoint" method="POST" class="contact-form">
+<form action="https://formspree.io/f/meoaeoyp" method="POST" class="contact-form">
     <div class="form-group">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
@@ -53,18 +51,13 @@ Interested in our tutoring services? Schedule a free 30-minute consultation to d
         <label for="subject">Subject Needed:</label>
         <select id="subject" name="subject">
             <option value="">Select a subject...</option>
-            <option value="AP Calculus">AP Calculus</option>
-            <option value="AP Physics">AP Physics</option>
-            <option value="AP Chemistry">AP Chemistry</option>
-            <option value="AP Biology">AP Biology</option>
-            <option value="AP Computer Science">AP Computer Science</option>
-            <option value="AP English">AP English</option>
-            <option value="AP History">AP History</option>
-            <option value="Honors Math">Honors Math</option>
-            <option value="Honors Science">Honors Science</option>
-            <option value="College Math">College Math</option>
-            <option value="College Science">College Science</option>
-            <option value="Other">Other</option>
+            {% for category in site.data.subjects %}
+            <optgroup label="{{ category[1].name }}">
+                {% for subject in category[1].subjects %}
+                <option value="{{ subject }}">{{ subject }}</option>
+                {% endfor %}
+            </optgroup>
+            {% endfor %}
         </select>
     </div>
     
@@ -79,8 +72,4 @@ Interested in our tutoring services? Schedule a free 30-minute consultation to d
     </div>
     
     <button type="submit" class="btn btn-primary">Request Consultation</button>
-</form>
-
-## For Prospective Tutors
-
-If you're interested in joining our team of tutors, please send your resume and a brief introduction to <a href="mailto:careers@pumatics.com">careers@pumatics.com</a>. 
+</form> 

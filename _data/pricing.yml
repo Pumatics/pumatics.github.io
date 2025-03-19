@@ -1,0 +1,89 @@
+# Standard hourly rates by category
+standard_rates:
+  middle_school:
+    rate: 72
+    description: "Middle School courses"
+    packages:
+      - hours: 5
+        price: 342
+      - hours: 10
+        price: 648
+      - hours: 20
+        price: 1152
+      - hours: 30
+        price: 1512
+  high_school:
+    rate: 72
+    description: "High School courses"
+    packages:
+      - hours: 5
+        price: 342
+      - hours: 10
+        price: 648
+      - hours: 20
+        price: 1152
+      - hours: 30
+        price: 1512
+  ap_honors:
+    rate: 80
+    description: "AP & Honors courses"
+    packages:
+      - hours: 5
+        price: 380
+      - hours: 10
+        price: 720
+      - hours: 20
+        price: 1280
+      - hours: 30
+        price: 1680
+  college:
+    rate: 80
+    description: "College-level courses"
+    packages:
+      - hours: 5
+        price: 380
+      - hours: 10
+        price: 720
+      - hours: 20
+        price: 1280
+      - hours: 30
+        price: 1680
+  programming:
+    rate: 80
+    description: "Programming courses"
+    packages:
+      - hours: 5
+        price: 380
+      - hours: 10
+        price: 720
+      - hours: 20
+        price: 1280
+      - hours: 30
+        price: 1680
+  test_prep:
+    rate: 100
+    description: "Test Preparation"
+    packages:
+      - hours: 5
+        price: 475
+      - hours: 10
+        price: 900
+      - hours: 20
+        price: 1600
+      - hours: 30
+        price: 2100
+
+# Package note
+package_note: "* Packages expire 365 days after being added to the client's account, which may differ slightly from the purchase date."
+
+# Package rates and discounts
+packages:
+  - hours: 5
+    discount: 5
+    description: "5-hour package (5% discount)"
+  - hours: 10
+    discount: 10
+    description: "10-hour package (10% discount)"
+  - hours: 20
+    discount: 15
+    description: "20-hour package (15% discount)" 

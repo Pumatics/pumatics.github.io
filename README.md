@@ -4,7 +4,7 @@ This repository contains the source code for the Pumatics tutoring business webs
 
 ## About Pumatics
 
-Pumatics is an online tutoring business specializing in AP courses, honors classes, and college-level subjects. Founded in San Jose and now based in Houston, Pumatics offers tutoring services nationwide through a team of qualified educators.
+Pumatics is an online tutoring business specializing in AP courses, honors classes, and college-level subjects. We offer comprehensive tutoring services nationwide through our team of qualified educators and our interactive online platform.
 
 ## Website Structure
 

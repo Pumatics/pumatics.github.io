@@ -8,11 +8,11 @@ permalink: /about/
 
 ## Our Story
 
-Pumatics was founded with a simple mission: to help students unlock their full academic potential through personalized, expert tutoring. What began as a small tutoring service in San Jose, California has grown into a nationwide network of dedicated educators passionate about student success.
+Pumatics was founded with a simple mission: to help students unlock their full academic potential through personalized, expert tutoring. What began as a small tutoring service has grown into a nationwide network of dedicated educators passionate about student success.
 
 Our journey started when our founder recognized a critical gap in educational support for students tackling challenging advanced courses. Too many bright students were struggling with difficult AP and honors courses, not because they lacked ability, but because they needed personalized guidance that traditional classroom settings couldn't provide.
 
-Today, Pumatics serves students across the country, maintaining our commitment to personalized education while expanding our reach through both in-person and online tutoring options.
+Today, Pumatics serves students across the country through our interactive online tutoring platform, maintaining our commitment to personalized education while making expert tutoring accessible to students everywhere.
 
 ## Our Philosophy
 
@@ -26,13 +26,11 @@ At Pumatics, we believe that:
 
 ## Our Founder
 
-![Founder's Photo](/assets/images/founder.jpg)
+![Founder's Photo](/assets/images/george-chumbipuma.jpg)
 
-As the founder and lead educator at Pumatics, I bring my passion for education and extensive experience in teaching advanced subjects to every aspect of our tutoring services. With a background in [Your Educational Background], I've dedicated my career to helping students navigate challenging academic material and achieve their goals.
+As the founder and lead educator at Pumatics, George brings his passion for education and extensive experience in teaching advanced subjects to every aspect of our tutoring services. With a background in mathematics, physics, and computer science, he's dedicated his career to helping students navigate challenging academic material and achieve their goals.
 
-My teaching journey began in San Jose, where I worked with students struggling with advanced mathematics and science courses. Seeing the transformation in students when they finally grasped difficult concepts inspired me to expand this approach to help more students.
-
-Now based in Houston, I lead our team of tutors while continuing to work directly with students. My approach combines rigorous academic instruction with mentorship, helping students not only master course material but also develop the confidence and study skills they need for long-term success.
+Through years of teaching experience, George has developed an approach that combines rigorous academic instruction with mentorship, helping students not only master course material but also develop the confidence and study skills they need for long-term success.
 
 ## Our Team
 
