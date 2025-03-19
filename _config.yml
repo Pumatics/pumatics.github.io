@@ -16,6 +16,7 @@ business:
 social:
   email: info@pumatics.com
   phone: (650) 209-0336
+  formspree_id: meoaeoyp
 
 # Navigation
 navigation:
@@ -23,6 +24,8 @@ navigation:
     url: /
   - title: Services
     url: /services
+  - title: Pricing
+    url: /pricing
   - title: About
     url: /about
   - title: Tutors
