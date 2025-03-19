@@ -5,48 +5,43 @@ title: Home
 
 # Welcome to Pumatics
 
-Expert tutoring services for high school and college students, specializing in AP courses, honors classes, and college-level subjects.
+## Passion. Experience. Diligence.
+
+At Pumatics, we champion the principle of tailored education. Our primary commitment is to provide one-on-one tutoring sessions that cater to each student's unique academic needs. George, the founder of Pumatics, brings a rich tapestry of educational experience. With degrees in Mathematics, Electrical Engineering, and Physics, and as a current Ph.D. student in computational and applied mathematics at Rice University, his depth of knowledge in STEM subjects ensures that students receive high-quality mentorship.
 
 ## Why Choose Pumatics?
 
-- **Expert Tutors**: Our team of qualified educators brings years of experience in their respective fields
-- **Personalized Learning**: Tailored instruction that matches your learning style and goals
-- **Flexible Options**: Choose between in-person or online tutoring sessions
-- **Proven Results**: Track record of helping students achieve their academic goals
-- **Comprehensive Support**: From AP courses to college-level subjects, we've got you covered
+- **Expert Knowledge**: Deep understanding of mathematics, physics, computer science, and other STEM subjects
+- **Focused Attention**: One-on-one online sessions tailored to your needs
+- **Clear Communication**: Complex topics explained in an understandable way
+- **Flexible Schedule**: Online sessions that work with your time zone
+
+## Our Approach
+
+At Pumatics, we believe in building strong relationships with our students. Our greatest joy is witnessing students actively engage and thrive during their sessions. We consistently emphasize the importance of rapport and confidence-building in the subjects they tackle.
 
 ## Our Services
 
-We offer specialized tutoring in:
+We offer specialized tutoring across multiple academic levels:
 
-### High School Programs
-- AP Courses (Calculus, Physics, Chemistry, Biology, and more)
-- Honors Classes
-- SAT/ACT Test Preparation
+{% for category in site.data.subjects limit:4 %}
+### {{ category[1].name }}
+{% for subject in category[1].subjects limit:3 %}
+- {{ subject }}
+{% endfor %}
+{% if category[1].subjects.size > 3 %}
+- *and more...*
+{% endif %}
 
-### College Programs
-- STEM Subjects
-- Advanced Mathematics
-- Sciences
-- Computer Science
+{% endfor %}
 
-[View All Services](/services){: .btn .btn-primary}
+[View All Services](/services){: .btn .btn-primary style="color: white; background-color: #3498db; border-color: #3498db; margin-right: 10px;"}
+[View Pricing](/pricing){: .btn .btn-primary style="color: white; background-color: #3498db; border-color: #3498db;"}
 
 ## Get Started
 
-Ready to achieve your academic goals? Schedule a free consultation to discuss how we can help you succeed.
+Whether you aim to boost your scores in the SAT/ACT exams, want a deeper understanding of computer science, or are looking to excel in AP and college-level subjects, George and the Pumatics team are here to guide you.
 
-[Schedule Consultation](/contact){: .btn .btn-primary}
-
-## Locations
-
-We serve students in:
-- Houston, TX (Main Office)
-- San Jose, CA
-- Remote sessions available nationwide
-
-## Contact Us
-
-Have questions? We're here to help:
-- Email: [info@pumatics.com](mailto:info@pumatics.com)
-- Phone: (650) 209-0336
+<a href="https://app.acuityscheduling.com/schedule.php?owner=21389694&appointmentType=19109208&ref=booking_button" target="_blank" class="acuity-embed-button" style="background: #5fb8b9; color: #fff; padding: 8px 12px; border: 0px; -webkit-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;-moz-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;border-radius: 4px; text-decoration: none; display: inline-block;">Schedule a Discovery Meeting</a>
+<link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/21389694.css" id="acuity-button-styles" />
+<script src="https://embed.acuityscheduling.com/embed/button/21389694.js" async></script>
