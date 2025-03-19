@@ -1,6 +1,6 @@
 @import "{{ site.theme }}";
 
-/* Custom colors */
+/* Custom colors and common values */
 :root {
   --primary-color: #2c3e50;
   --secondary-color: #3498db;
@@ -8,6 +8,13 @@
   --light-bg: #f8f9fa;
   --dark-text: #333;
   --light-text: #f8f9fa;
+  --border-color: #eee;
+  --shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  --border-radius: 5px;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
 }
 
 /* Global styles */
@@ -29,27 +36,35 @@ body {
 .main-content h5,
 .main-content h6 {
   color: var(--primary-color);
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-md);
 }
 
 .main-content h1 {
   color: var(--secondary-color);
 }
 
+/* Common card styles */
+.card {
+  background-color: var(--light-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: var(--spacing-lg);
+}
+
 /* Navigation */
 .main-nav {
-  margin-top: 1rem;
+  margin-top: var(--spacing-md);
 }
 
 .main-nav .btn {
-  margin: 0 0.5rem;
+  margin: 0 var(--spacing-sm);
 }
 
 /* Buttons */
 .btn {
   display: inline-block;
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-md);
   color: rgba(255, 255, 255, 0.9);
   background-color: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.2);
@@ -82,11 +97,8 @@ body {
 /* Tutor profiles */
 .tutor-profile {
   display: flex;
-  margin-bottom: 2rem;
-  padding: 1.5rem;
-  background-color: var(--light-bg);
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: var(--spacing-xl);
+  composes: card;
 }
 
 .tutor-image {
@@ -94,7 +106,7 @@ body {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  margin-right: 1.5rem;
+  margin-right: var(--spacing-lg);
 }
 
 .tutor-info {
@@ -108,40 +120,35 @@ body {
 
 .tutor-info h4 {
   color: var(--secondary-color);
-  margin-top: 0.5rem;
+  margin-top: var(--spacing-sm);
 }
 
 /* Contact page */
 .contact-methods {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
-  margin-bottom: 2rem;
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
 }
 
 .contact-method {
   flex: 1;
   min-width: 250px;
-  padding: 1.5rem;
-  background-color: var(--light-bg);
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  composes: card;
 }
 
 .contact-form {
-  background-color: var(--light-bg);
-  padding: 2rem;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  composes: card;
+  padding: var(--spacing-xl);
 }
 
 .form-group {
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--spacing-lg);
 }
 
 .form-group label {
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--spacing-sm);
   font-weight: bold;
 }
 
@@ -149,7 +156,7 @@ body {
 .form-group select,
 .form-group textarea {
   width: 100%;
-  padding: 0.5rem;
+  padding: var(--spacing-sm);
   border: 1px solid #ddd;
   border-radius: 3px;
   font-size: 1rem;
@@ -158,15 +165,15 @@ body {
 /* Footer */
 .site-footer {
   margin-top: 4rem;
-  padding-top: 2rem;
-  border-top: 1px solid #eee;
+  padding-top: var(--spacing-xl);
+  border-top: 1px solid var(--border-color);
 }
 
 .footer-content {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
-  margin-bottom: 2rem;
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
 }
 
 .footer-section {
@@ -177,15 +184,15 @@ body {
 .footer-section h3 {
   color: var(--primary-color);
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-md);
 }
 
 .copyright {
   text-align: center;
   font-size: 0.9rem;
   color: #777;
-  border-top: 1px solid #eee;
-  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+  padding-top: var(--spacing-md);
 }
 
 /* Responsive adjustments */
@@ -198,7 +205,7 @@ body {
   
   .tutor-image {
     margin-right: 0;
-    margin-bottom: 1rem;
+    margin-bottom: var(--spacing-md);
   }
   
   .contact-methods,
