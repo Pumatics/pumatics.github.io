@@ -20,18 +20,13 @@ We're here to help you achieve your academic goals. Reach out to schedule a free
         <h3>📱 Phone</h3>
         <p>(650) 209-0336</p>
     </div>
-    
-    <div class="contact-method">
-        <h3>📍 Locations</h3>
-        <p>Remote tutoring available nationwide</p>
-    </div>
 </div>
 
 ## Schedule a Free Consultation
 
 Interested in our tutoring services? Schedule a free 30-minute consultation to discuss your academic goals and how we can help you achieve them.
 
-<form action="https://formspree.io/f/meoaeoyp" method="POST" class="contact-form">
+<form action="https://formspree.io/f/{{ site.social.formspree_id }}" method="POST" class="contact-form">
     <div class="form-group">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
