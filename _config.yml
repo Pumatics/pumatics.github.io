@@ -16,6 +16,7 @@ business:
 social:
   email: info@pumatics.com
   phone: (650) 209-0336
+  formspree_id: meoaeoyp
 
 # Navigation - simplified for coming soon page
 # navigation:
@@ -34,3 +35,5 @@ social:
 markdown: kramdown
 plugins:
   - jekyll-seo-tag
+
+github: [metadata]
