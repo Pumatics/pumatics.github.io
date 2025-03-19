@@ -8,21 +8,30 @@ Pumatics is an online tutoring business specializing in AP courses, honors class
 
 ## Website Structure
 
-The website is built using Jekyll and the Cayman theme, with customizations for Pumatics branding. The site includes:
+The website is built using Jekyll with the Cayman theme, customized for Pumatics branding. The site includes:
 
-- Home page with business overview
-- Services page detailing tutoring offerings
-- About page with company history and philosophy
-- Tutors page showcasing the team
-- Contact page with consultation request form
+- **Home page**: Business overview and key services
+- **Services page**: Detailed tutoring offerings by subject
+- **Pricing page**: Tutoring rates and package options
+- **About page**: Company history and philosophy
+- **Tutors page**: Team profiles and qualifications
+- **Contact page**: Consultation request form
+
+## Technology Stack
+
+- **Static Site Generator**: Jekyll
+- **Hosting**: GitHub Pages
+- **CSS Framework**: Custom SCSS with CSS variables
+- **Form Handling**: Formspree
+- **Version Control**: Git
 
 ## Development
 
 ### Prerequisites
 
-- Ruby
-- Jekyll
-- Bundler
+- Ruby (version 2.7.0 or higher)
+- Jekyll (version 4.0.0 or higher)
+- Bundler (version 2.0.0 or higher)
 
 ### Local Development
 
