@@ -28,7 +28,7 @@ Clients are responsible for remitting a cancellation fee for sessions canceled w
 
 ## Student Packages
 
-Clients may request a refund for unused tutoring package hours, provided the package remains valid and has not expired. Refund calculations will involve deducting the cost of utilized hours at the base hourly rate from the total package cost.
+Clients may request a refund for unused tutoring package hours, provided the package remains valid and has not expired. Refund calculations will involve deducting the cost of utilized hours at the standard rate from the total package cost.
 
 For instance, if a client acquires an AP & Honors Online Student Package (10 Hours) for $720 and subsequently requests a refund after utilizing three hours, the calculation would proceed as follows: the cost of three sessions (3 x $80 = $240) would be subtracted from the total, yielding a refund of $720 - $240 = $480.
 
