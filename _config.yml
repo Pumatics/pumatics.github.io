@@ -33,8 +33,6 @@ navigation:
     url: /services
   - title: Pricing
     url: /pricing
-  - title: About
-    url: /about
   - title: Tutors
     url: /tutors
   - title: Contact
