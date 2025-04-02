@@ -36,52 +36,88 @@ Schedule your tutoring session here.
 
 Fill out the form below and we'll get back to you shortly.
 
-<form action="https://formspree.io/f/{{ site.social.formspree_id }}" method="POST" class="contact-form" id="consultationForm">
-    <div class="form-group">
-        <label for="name">Name: <span class="required">*</span></label>
-        <input type="text" id="name" name="name" required>
-        <div class="error-message" id="nameError">Please enter your name</div>
-    </div>
-    
-    <div class="form-group">
-        <label for="email">Email: <span class="required">*</span></label>
-        <input type="email" id="email" name="email" required>
-        <div class="error-message" id="emailError">Please enter a valid email address</div>
-    </div>
-    
-    <div class="form-group">
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" placeholder="(XXX) XXX-XXXX">
-    </div>
-    
-    <div class="form-group">
-        <label for="subject">Subject Needed: <span class="required">*</span></label>
-        <select id="subject" name="subject" required>
-            <option value="">Select a subject...</option>
-            {% for category in site.data.subjects %}
-            <optgroup label="{{ category[1].name }}">
-                {% for subject in category[1].subjects %}
-                <option value="{{ subject }}">{{ subject }}</option>
-                {% endfor %}
-            </optgroup>
-            {% endfor %}
-        </select>
-        <div class="error-message" id="subjectError">Please select a subject</div>
-    </div>
-    
-    <div class="form-group">
-        <label for="message">Message: <span class="required">*</span></label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-        <div class="error-message" id="messageError">Please enter your message</div>
-    </div>
-    
-    <div class="form-group">
-        <label for="preferred-time">Preferred Consultation Time:</label>
-        <input type="text" id="preferred-time" name="preferred-time" placeholder="e.g., Weekdays after 4pm">
-    </div>
-    
-    <button type="submit" class="acuity-embed-button" style="background: #5fb8b9; color: #fff; padding: 8px 12px; border: 0px; -webkit-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;-moz-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;border-radius: 4px; text-decoration: none; display: inline-block; cursor: pointer;">Request Consultation</button>
-</form>
+<!-- Read the Formbutton docs at formspree.io/formbutton/docs. See more examples at codepen.io/formspree -->
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+  /* paste this line in verbatim */
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+  /* customize formbutton below*/     
+  formbutton("create", {
+    action: "https://formspree.io/f/{{ site.social.formspree_id }}",
+    title: "How can we help?",
+    fields: [
+      { 
+        type: "text",
+        label: "Name:",
+        name: "name",
+        required: true,
+        placeholder: "Your name"
+      },
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "tel",
+        label: "Phone:",
+        name: "phone",
+        placeholder: "(XXX) XXX-XXXX"
+      },
+      {
+        type: "select",
+        label: "Subject Needed:",
+        name: "subject",
+        required: true,
+        options: [
+          { label: "Select a subject...", value: "" },
+          { label: "AP Calculus", value: "AP Calculus" },
+          { label: "AP Physics", value: "AP Physics" },
+          { label: "AP Chemistry", value: "AP Chemistry" },
+          { label: "AP Biology", value: "AP Biology" },
+          { label: "AP Computer Science", value: "AP Computer Science" },
+          { label: "AP Statistics", value: "AP Statistics" },
+          { label: "AP Economics", value: "AP Economics" },
+          { label: "AP English", value: "AP English" },
+          { label: "AP History", value: "AP History" },
+          { label: "Honors Math", value: "Honors Math" },
+          { label: "Honors Science", value: "Honors Science" },
+          { label: "College Math", value: "College Math" },
+          { label: "College Physics", value: "College Physics" },
+          { label: "College Chemistry", value: "College Chemistry" },
+          { label: "College Biology", value: "College Biology" },
+          { label: "Other", value: "Other" }
+        ]
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        required: true,
+        placeholder: "Tell us about your needs and goals"
+      },
+      {
+        type: "text",
+        label: "Preferred Consultation Time:",
+        name: "preferred-time",
+        placeholder: "e.g., Weekdays after 4pm"
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "#5fb8b9"
+      },
+      button: {
+        backgroundColor: "#5fb8b9"
+      }
+    }
+  });
+</script>
+
+<button onclick="formbutton('showForm')" class="acuity-embed-button" style="background: #5fb8b9; color: #fff; padding: 8px 12px; border: 0px; -webkit-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;-moz-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;border-radius: 4px; text-decoration: none; display: inline-block; cursor: pointer;">Send Message</button>
 
 <style>
 .required {
