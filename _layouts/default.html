@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ site.favicon.ico | relative_url }}">
+    <link rel="icon" type="image/svg+xml" href="{{ site.favicon.svg | relative_url }}">
+    <link rel="apple-touch-icon" href="{{ site.favicon.apple_touch | relative_url }}">
+    <link rel="manifest" href="{{ site.favicon.manifest | relative_url }}">
+    
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap">
     {% seo %}

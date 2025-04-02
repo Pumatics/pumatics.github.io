@@ -4,6 +4,13 @@ description: Expert tutoring for AP, Honors, and College courses
 url: "https://pumatics.com"
 baseurl: ""
 
+# Favicon configuration
+favicon:
+  ico: /assets/images/favicon.ico
+  svg: /assets/images/favicon.svg
+  apple_touch: /assets/images/apple-touch-icon.png
+  manifest: /assets/images/site.webmanifest
+
 # Business information
 business:
   name: Pumatics
