@@ -14,7 +14,7 @@ standard_rates:
         price: 1512
   high_school:
     rate: 72
-    description: "High School courses"
+    description: "High School (Non-AP/Honors) courses"
     packages:
       - hours: 5
         price: 342
