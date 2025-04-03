@@ -26,7 +26,7 @@ permalink: /tutors/
     <img src="/assets/images/george-chumbipuma.jpg" alt="George C. - Math & CS Specialist" class="tutor-image">
     <div class="tutor-info">
         <h3>George C.</h3>
-        <p><strong>Subjects:</strong> AP Calculus AB/BC, AP Physics 1/2/C, AP Statistics, AP Computer Science A/Principles, High School Math, SAT/ACT Math, Honors Chemistry, Chemistry</p>
+        <p><strong>Subjects:</strong> AP Calculus AB/BC, AP Physics 1/2/C, AP Statistics, AP Computer Science A/Principles, SAT/ACT Math, Honors Chemistry, Chemistry</p>
     </div>
 </div>
 
