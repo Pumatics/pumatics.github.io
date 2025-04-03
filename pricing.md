@@ -34,9 +34,9 @@ Package benefits:
 - Flexible scheduling
 - Refund available for unused hours
 
-<div class="package-tabs">
+<div class="package-container">
   {% for category in site.data.pricing.standard_rates %}
-  <div class="package-tab {% if forloop.first %}active{% endif %}" data-category="{{ category[0] }}">
+  <div class="package-section">
     <h3>{{ category[1].description }}</h3>
     {% assign base_rate = category[1].rate %}
     
@@ -65,44 +65,82 @@ Package benefits:
 </div>
 
 <style>
-.package-tabs {
-  margin: 20px 0;
+.package-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  margin: var(--spacing-xl) 0;
 }
 
-.package-tab {
-  display: none;
+.package-section {
+  background-color: var(--light-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: var(--spacing-xl);
 }
 
-.package-tab.active {
-  display: block;
+.package-section h3 {
+  color: var(--secondary-color);
+  margin-top: 0;
+  margin-bottom: var(--spacing-xl);
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
-@media (min-width: 768px) {
-  .package-tabs {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: var(--spacing-md);
+  font-size: 1rem;
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: var(--spacing-md);
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+  line-height: 1.5;
+}
+
+.pricing-table th {
+  background-color: var(--light-bg);
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.pricing-table tr:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.savings {
+  color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .pricing-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    font-size: 0.95rem;
   }
   
-  .package-tab {
-    display: block;
-    flex: 1;
-    min-width: 300px;
+  .package-section {
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-lg);
+  }
+
+  .package-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .pricing-table th,
+  .pricing-table td {
+    padding: var(--spacing-sm) var(--spacing-md);
   }
 }
 </style>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const tabs = document.querySelectorAll('.package-tab');
-  tabs.forEach(tab => {
-    tab.addEventListener('click', function() {
-      tabs.forEach(t => t.classList.remove('active'));
-      this.classList.add('active');
-    });
-  });
-});
-</script>
 
 ## Payment Details
 
