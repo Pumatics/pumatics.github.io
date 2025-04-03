@@ -45,6 +45,7 @@ Package benefits:
         <tr>
           <th>Hours</th>
           <th>Price</th>
+          <th>Effective Rate</th>
           <th>Savings</th>
         </tr>
       </thead>
@@ -52,9 +53,11 @@ Package benefits:
         {% for package in category[1].packages %}
         {% assign original = package.hours | times: base_rate %}
         {% assign savings = original | minus: package.price %}
+        {% assign effective_rate = package.price | divided_by: package.hours %}
         <tr>
           <td>{{ package.hours }}</td>
           <td>${{ package.price }}</td>
+          <td>${{ effective_rate }}/hour</td>
           <td class="savings">${{ savings }}</td>
         </tr>
         {% endfor %}
