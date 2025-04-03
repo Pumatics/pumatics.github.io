@@ -107,29 +107,51 @@ body {
   background-color: var(--light-bg);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
-  padding: var(--spacing-lg);
+  padding: var(--spacing-xl);
+  align-items: flex-start;
 }
 
 .tutor-image {
-  width: 150px;
-  height: 150px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   object-fit: cover;
-  margin-right: var(--spacing-lg);
+  object-position: center;
+  margin-right: var(--spacing-xl);
+  flex-shrink: 0;
+  display: block;
+  background-color: #f0f0f0;
+}
+
+.tutor-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .tutor-info {
   flex: 1;
+  min-width: 0;
+  padding-top: var(--spacing-md);
 }
 
 .tutor-info h3 {
   margin-top: 0;
   color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-bottom: var(--spacing-md);
 }
 
-.tutor-info h4 {
-  color: var(--secondary-color);
-  margin-top: var(--spacing-sm);
+.tutor-info ul {
+  margin: 0;
+  padding-left: var(--spacing-lg);
+}
+
+.tutor-info li {
+  margin-bottom: var(--spacing-sm);
+  color: var(--dark-text);
 }
 
 /* Contact page */
@@ -213,15 +235,25 @@ body {
 @media screen and (max-width: 768px) {
   .tutor-profile {
     flex-direction: column;
-    align-items: center;
     text-align: center;
+    align-items: center;
   }
   
   .tutor-image {
+    width: 250px;
+    height: 250px;
     margin-right: 0;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
   }
-  
+
+  .tutor-info {
+    padding-top: 0;
+  }
+
+  .tutor-info h3 {
+    font-size: 1.6rem;
+  }
+
   .contact-methods,
   .footer-content {
     flex-direction: column;
