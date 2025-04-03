@@ -5,7 +5,7 @@ middle_school:
     - Middle School General Science
 
 high_school:
-  name: High School
+  name: High School (Non-AP/Honors)
   subjects:
     - Algebra I
     - Geometry
