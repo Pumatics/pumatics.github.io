@@ -11,6 +11,7 @@ permalink: /tutors/
     <div class="tutor-info">
         <h3>Boris S.</h3>
         <p><strong>Subjects:</strong> Middle School Math, Middle School Science, Algebra I, Geometry, Algebra II / Trigonometry, Precalculus / Math Analysis</p>
+        <p><strong>Bio:</strong> Hello! I am Boris. I am from Russia. I like climbing trees, playing guitar, and the snow. I do not like pizza. My favorite topics are mathematics, literature, and history. Especially mathematics, because it is beautiful and interconnected. There is nothing more exciting than being stuck on a problem except for finally solving it. My mission is to share my love for knowledge with my students.</p>
     </div>
 </div>
 
