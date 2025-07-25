@@ -39,6 +39,7 @@ permalink: /tutors/
     </div>
 </div>
 
+<!--
 <div class="tutor-profile">
     <img src="/assets/images/lourdes-morales.jpg" alt="Lourdes M. - Spanish Specialist" class="tutor-image">
     <div class="tutor-info">
@@ -46,6 +47,7 @@ permalink: /tutors/
         <p><strong>Subjects:</strong> Honors Spanish, AP Spanish Language</p>
     </div>
 </div>
+-->
 
 <div class="tutor-profile">
     <img src="/assets/images/vicky-villalobos.jpg" alt="Vicky Villalobos - Science & Math Specialist" class="tutor-image">
