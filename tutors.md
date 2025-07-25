@@ -39,13 +39,13 @@ permalink: /tutors/
     </div>
 </div>
 
-<div class="tutor-profile">
+<!-- <div class="tutor-profile">
     <img src="/assets/images/lourdes-morales.jpg" alt="Lourdes M. - Spanish Specialist" class="tutor-image">
     <div class="tutor-info">
         <h3>Lourdes M.</h3>
         <p><strong>Subjects:</strong> Honors Spanish, AP Spanish Language</p>
     </div>
-</div>
+</div> -->
 
 <div class="tutor-profile">
     <img src="/assets/images/vicky-villalobos.jpg" alt="Vicky Villalobos - Science & Math Specialist" class="tutor-image">
