@@ -19,9 +19,10 @@ Hourly rates and package discounts for all tutoring levels.
   </thead>
   <tbody>
     {% for category in site.data.pricing.standard_rates %}
+    {% assign rate = category[1].rate %}
     <tr>
       <td>{{ category[1].description }}</td>
-      <td>${{ category[1].rate }}/hour</td>
+      <td>{% include format_money.html amount=rate suffix='/hour' %}</td>
     </tr>
     {% endfor %}
   </tbody>
@@ -30,7 +31,6 @@ Hourly rates and package discounts for all tutoring levels.
 ## Package Discounts
 
 Package benefits:
-- Valid for 365 days from activation
 - Flexible scheduling
 - Refund available for unused hours
 
@@ -50,15 +50,21 @@ Package benefits:
         </tr>
       </thead>
       <tbody>
-        {% for package in category[1].packages %}
+        {% for package in site.data.pricing.packages %}
         {% assign original = package.hours | times: base_rate %}
-        {% assign savings = original | minus: package.price %}
-        {% assign effective_rate = package.price | divided_by: package.hours %}
+        {% assign discount_amount = original | times: package.discount %}
+        {% assign package_price = original | minus: discount_amount %}
+        {%- comment -%} Round to nearest $10 {%- endcomment -%}
+        {% assign price_div10 = package_price | divided_by: 10.0 %}
+        {% assign rounded_price = price_div10 | round | times: 10 %}
+        {% assign effective_rate = rounded_price | divided_by: package.hours %}
+        {% assign savings = original | minus: rounded_price %}
+
         <tr>
           <td>{{ package.hours }}</td>
-          <td>${{ package.price }}</td>
-          <td>${{ effective_rate }}/hour</td>
-          <td class="savings">${{ savings }}</td>
+          <td>{% include format_money.html amount=rounded_price %}</td>
+          <td>{% include format_money.html amount=effective_rate suffix='/hour' %}</td>
+          <td class="savings">{% include format_money.html amount=savings %}</td>
         </tr>
         {% endfor %}
       </tbody>
@@ -67,92 +73,9 @@ Package benefits:
   {% endfor %}
 </div>
 
-<style>
-.package-container {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-xl);
-  margin: var(--spacing-xl) 0;
-}
-
-.package-section {
-  background-color: var(--light-bg);
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow);
-  padding: var(--spacing-xl);
-}
-
-.package-section h3 {
-  color: var(--secondary-color);
-  margin-top: 0;
-  margin-bottom: var(--spacing-xl);
-  text-align: center;
-  font-size: 1.4rem;
-  font-weight: 600;
-}
-
-.pricing-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: var(--spacing-md);
-  font-size: 1rem;
-}
-
-.pricing-table th,
-.pricing-table td {
-  padding: var(--spacing-md);
-  text-align: left;
-  border-bottom: 1px solid var(--border-color);
-  line-height: 1.5;
-}
-
-.pricing-table th {
-  background-color: var(--light-bg);
-  font-weight: 600;
-  color: var(--primary-color);
-}
-
-.pricing-table tr:hover {
-  background-color: rgba(0, 0, 0, 0.02);
-}
-
-.savings {
-  color: var(--accent-color);
-}
-
-@media (max-width: 768px) {
-  .pricing-table {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-    font-size: 0.95rem;
-  }
-  
-  .package-section {
-    margin-bottom: var(--spacing-lg);
-    padding: var(--spacing-lg);
-  }
-
-  .package-section h3 {
-    font-size: 1.3rem;
-    margin-bottom: var(--spacing-lg);
-  }
-
-  .pricing-table th,
-  .pricing-table td {
-    padding: var(--spacing-sm) var(--spacing-md);
-  }
-}
-</style>
-
 ## Payment Details
 
-- Payment at booking
-- Scheduling: All sessions booked through Acuity scheduling system
-- Package payments: 
-  - [Venmo](https://venmo.com/geochum)
-  - [Cash App](https://cash.app/$geochum)
-  - Zelle: info@pumatics.com
-- After package payment, you'll receive a code to use for scheduling
-- Package hours valid for 365 days from activation
-- Refund available for unused hours at standard rate
+- **At booking:** All sessions booked through Acuity scheduling system are payable at the time of booking.
+- **Packages:** Package payments are accepted via Venmo, Cash App, and Zelle. After booking, you'll receive an invoice with detailed payment instructions and your unique scheduling code.
+- **Validity:** Package hours are valid for 365 days from the date the package code is sent to your email.
+- **Refunds:** For detailed refund information, please refer to our [Terms and Conditions](/terms-and-conditions/#refund-policy).

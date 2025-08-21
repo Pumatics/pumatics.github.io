@@ -1,0 +1,10 @@
+{% assign cents = include.amount | times: 100.0 | round %}
+{% assign dollars = cents | divided_by: 100 %}
+{% assign cents_only = cents | modulo: 100 %}
+{% if cents_only < 10 %}
+  {% assign cents_str = '0' | append: cents_only %}
+{% else %}
+  {% assign cents_str = cents_only %}
+{% endif %}
+${{ dollars }}.{{ cents_str }}{% if include.suffix %}{{ include.suffix }}{% endif %}
+

@@ -20,30 +20,32 @@ Clients must cancel or reschedule their appointments at least 4 hours before the
 
 ## Refund Policy
 
+### Session Cancellation Fees
 Clients are responsible for remitting a cancellation fee for sessions canceled with less than 4 hours notice. The fee is based on the session's scheduled duration:
 
 - For sessions of 1 hour or longer, the cancellation fee will be equivalent to 1 hour at the standard or package rate, depending on the client's purchase and subject area.
 - For sessions of 30 minutes, the cancellation fee will be equivalent to the 30-minute rate, based on the standard or package rate, depending on the client's purchase and subject area.
 - In cases of no-show, clients will be charged 100% of the session cost, regardless of duration.
 
-## Student Packages
-
+### Package Refunds
 Clients may request a refund for unused tutoring package hours, provided the package remains valid and has not expired. Refund calculations will involve deducting the cost of utilized hours at the standard rate from the total package cost.
 
 For instance, if a client acquires an AP & Honors Online Student Package (10 Hours) for $720 and subsequently requests a refund after utilizing three hours, the calculation would proceed as follows: the cost of three sessions (3 x $80 = $240) would be subtracted from the total, yielding a refund of $720 - $240 = $480.
 
-## Ending A Meeting Early
+**Note:** Any non-recoverable payment processing fees charged by third-party payment providers are not refundable and will be deducted from the refund amount.
 
+## Student Packages
+
+Package hours are valid for 365 days from the date the package code is sent to your email. For detailed refund information, please refer to the Refund Policy section above.
+
+## Session Management
+
+### Ending A Meeting Early
 Should a client elect to conclude a scheduled meeting before the established end time, they will still be liable for the full payment corresponding to the initially planned duration of the session. If a tutor terminates the session early, they will arrange to reschedule the remaining time with the client at a mutually convenient time.
 
-## Extending A Meeting Beyond The Booked Time Slot
-
-Suppose a client desires to extend a meeting beyond the initially booked timeframe. In that case, the additional time must be purchased before executing the meeting extension.
+### Extending A Meeting Beyond The Booked Time Slot
+If a client desires to extend a meeting beyond the initially booked timeframe, the additional time must be purchased before executing the meeting extension.
 
 ## Modifications to Terms and Conditions
 
-We reserve the right to update or modify these terms and conditions at any time without prior notice. Any changes will be effective immediately upon being posted to our website or communicated to clients. Continued use of our services after any modifications constitutes acceptance of the updated terms. Clients are encouraged to review the terms and conditions periodically to stay informed of any updates.
-
-## Package Expiration
-
-Please note that all packages will expire 365 days from the date the package is added to the client's account, which may differ slightly from the purchase date. 
+We reserve the right to update or modify these terms and conditions at any time without prior notice. Any changes will be effective immediately upon being posted to our website or communicated to clients. Continued use of our services after any modifications constitutes acceptance of the updated terms. Clients are encouraged to review the terms and conditions periodically to stay informed of any updates. 
