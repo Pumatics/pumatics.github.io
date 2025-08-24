@@ -3,6 +3,7 @@ middle_school:
   subjects:
     - Middle School Math
     - Middle School General Science
+    - Middle School English
 
 high_school:
   name: High School (Non-AP/Honors)
@@ -15,6 +16,7 @@ high_school:
     - Chemistry
     - Biology
     - High School General Science
+    - English
     - Spanish
 
 ap_honors:
@@ -25,6 +27,7 @@ ap_honors:
     - Honors Precalculus / Math Analysis
     - Honors Physics
     - Honors Chemistry
+    - Honors English
     - Honors Spanish
     - AP Precalculus
     - AP Calculus AB
@@ -38,6 +41,8 @@ ap_honors:
     - AP Computer Science Principles
     - AP Computer Science A
     - AP Statistics
+    - AP English Language and Composition
+    - AP English Literature and Composition
     - AP Spanish Language and Culture
     - AP Spanish Literature and Culture
 
