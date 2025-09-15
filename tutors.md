@@ -54,5 +54,3 @@ permalink: /tutors/
         <p><strong>Subjects:</strong> AP Precalculus, AP Statistics, AP Chemistry, Honors Chemistry, Biology</p>
     </div>
 </div>
-
-[Apply to Become a Tutor](/contact){: .btn} 
