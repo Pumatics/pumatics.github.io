@@ -17,7 +17,7 @@ high_school:
     - Biology
     - High School General Science
     - English
-    - Spanish
+    # - Spanish
 
 ap_honors:
   name: AP & Honors
@@ -28,7 +28,7 @@ ap_honors:
     - Honors Physics
     - Honors Chemistry
     - Honors English
-    - Honors Spanish
+    # - Honors Spanish
     - AP Precalculus
     - AP Calculus AB
     - AP Calculus BC
@@ -43,8 +43,8 @@ ap_honors:
     - AP Statistics
     - AP English Language and Composition
     - AP English Literature and Composition
-    - AP Spanish Language and Culture
-    - AP Spanish Literature and Culture
+    # - AP Spanish Language and Culture
+    # - AP Spanish Literature and Culture
 
 college:
   name: College
