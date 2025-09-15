@@ -7,7 +7,6 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Pumatics',
   description: 'Professional tutoring services for students of all ages',
-  generator: 'v0.app',
 }
 
 export default function RootLayout({
