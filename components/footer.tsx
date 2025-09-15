@@ -36,8 +36,10 @@ export default function Footer() {
             src="https://i.imgur.com/CKfPClv.png"
             alt="Logo" width={250} height={100} />
             </div>
-            <Button className="bg-transparent border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-indigo-800 px-4 sm:px-6 py-2 rounded-full text-sm sm:text-base w-full sm:w-auto">
-              BOOK DISCOVERY CALL
+            <Button asChild className="bg-transparent border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-indigo-800 px-4 sm:px-6 py-2 rounded-full text-sm sm:text-base w-full sm:w-auto">
+              <a href="https://app.acuityscheduling.com/schedule.php?owner=21389694&appointmentType=category:Discovery%20Meeting" target="_blank" rel="noopener noreferrer">
+                BOOK DISCOVERY CALL
+              </a>
             </Button>
           </div>
         </div>
