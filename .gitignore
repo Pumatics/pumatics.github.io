@@ -7,10 +7,13 @@
 /.next/
 /out/
 
+# Jekyll build output (generated)
+/_site/
+
 # production
 /build
 
-# debug
+# debug logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -22,9 +25,5 @@ yarn-error.log*
 # vercel
 .vercel
 
-# typescript
+# TypeScript
 *.tsbuildinfo
-next-env.d.ts_site/
-/.next/
-/node_modules
-/out/
