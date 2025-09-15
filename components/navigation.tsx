@@ -36,8 +36,10 @@ export default function Navigation() {
           </Link>
         </div>
 
-        <Button className="hidden md:block bg-orange-500 hover:bg-orange-600 text-white px-4 lg:px-6 py-2 rounded-full font-semibold text-sm lg:text-base">
-          SCHEDULE APPOINTMENT
+        <Button asChild className="hidden md:block bg-orange-500 hover:bg-orange-600 text-white px-4 lg:px-6 py-2 rounded-full font-semibold text-sm lg:text-base">
+          <a href="https://app.acuityscheduling.com/schedule.php?owner=21389694" target="_blank" rel="noopener noreferrer">
+            SCHEDULE APPOINTMENT
+          </a>
         </Button>
 
         <button
@@ -88,10 +90,13 @@ export default function Navigation() {
               Contact Us
             </Link>
             <Button
+              asChild
               className="w-full bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-semibold mt-4"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              SCHEDULE APPOINTMENT
+              <a href="https://app.acuityscheduling.com/schedule.php?owner=21389694" target="_blank" rel="noopener noreferrer">
+                SCHEDULE APPOINTMENT
+              </a>
             </Button>
           </div>
         </div>
