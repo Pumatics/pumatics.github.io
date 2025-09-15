@@ -105,8 +105,10 @@ export default function HomePage() {
                 <p className="text-gray-700 mb-4 text-sm md:text-base">
                   Ready to start tutoring? Schedule your session now.
                 </p>
-                <Button className="bg-orange-500 hover:bg-orange-600 text-white px-6 md:px-8 py-3 rounded-full font-semibold w-full sm:w-auto text-sm md:text-base">
-                  SCHEDULE APPOINTMENT
+                <Button asChild className="bg-orange-500 hover:bg-orange-600 text-white px-6 md:px-8 py-3 rounded-full font-semibold w-full sm:w-auto text-sm md:text-base">
+                  <a href="https://app.acuityscheduling.com/schedule.php?owner=21389694" target="_blank" rel="noopener noreferrer">
+                    SCHEDULE APPOINTMENT
+                  </a>
                 </Button>
               </div>
             </div>
