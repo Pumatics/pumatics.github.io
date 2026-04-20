@@ -8,8 +8,8 @@ export const site = {
   discoveryCallUrl:
     "https://app.acuityscheduling.com/schedule.php?owner=21389694&appointmentType=category:Discovery%20Meeting",
   images: {
-    logoNav: "https://i.imgur.com/ICLXFWI.png",
-    logoFooter: "https://i.imgur.com/CKfPClv.png",
+    logoNav: "/images/brand/pumatics-logo-no-title.png",
+    logoFooter: "/images/brand/pumatics-logo-white-horizontal.png",
     homeHero: "https://i.imgur.com/EXje6lM.jpeg",
     homeWelcome: "https://i.imgur.com/yHsEEhy.jpeg",
     tutorBoris: "https://i.imgur.com/fZwlRPC.jpeg",

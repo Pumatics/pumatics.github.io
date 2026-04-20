@@ -16,7 +16,7 @@ export default function Navigation() {
         <Link href="/" className="flex items-center">
             <img
             src={site.images.logoNav}
-            alt="Logo" width={50} height={50} />
+            alt="Pumatics" width={50} height={50} />
         </Link>
 
         <div className="hidden lg:flex items-center space-x-8">

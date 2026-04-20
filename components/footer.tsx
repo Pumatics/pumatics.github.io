@@ -34,8 +34,12 @@ export default function Footer() {
           <div className="space-y-4 sm:col-span-2 lg:col-span-1">
             <div className="flex items-center">
               <img
-            src={site.images.logoFooter}
-            alt="Logo" width={250} height={100} />
+                src={site.images.logoFooter}
+                alt="Pumatics"
+                width={250}
+                height={100}
+                className="max-h-[100px] max-w-[250px] w-auto object-contain object-left"
+              />
             </div>
             <Button asChild className="bg-transparent border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-indigo-800 px-4 sm:px-6 py-2 rounded-full text-sm sm:text-base w-full sm:w-auto">
               <a href={site.discoveryCallUrl} target="_blank" rel="noopener noreferrer">
