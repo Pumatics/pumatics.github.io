@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { site } from "@/lib/site"
 
 export default function Footer() {
   return (
@@ -10,8 +11,8 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <div className="space-y-2 text-gray-300">
-              <p>Email: info@pumatics.com</p>
-              <p>Phone: (650) 209-0336</p>
+              <p>Email: {site.email}</p>
+              <p>Phone: {site.phoneDisplay}</p>
             </div>
           </div>
 
@@ -33,11 +34,11 @@ export default function Footer() {
           <div className="space-y-4 sm:col-span-2 lg:col-span-1">
             <div className="flex items-center">
               <img
-            src="https://i.imgur.com/CKfPClv.png"
+            src={site.images.logoFooter}
             alt="Logo" width={250} height={100} />
             </div>
             <Button asChild className="bg-transparent border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-indigo-800 px-4 sm:px-6 py-2 rounded-full text-sm sm:text-base w-full sm:w-auto">
-              <a href="https://app.acuityscheduling.com/schedule.php?owner=21389694&appointmentType=category:Discovery%20Meeting" target="_blank" rel="noopener noreferrer">
+              <a href={site.discoveryCallUrl} target="_blank" rel="noopener noreferrer">
                 BOOK DISCOVERY CALL
               </a>
             </Button>
@@ -45,7 +46,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t border-indigo-700 text-center text-gray-300">
-          <p>© 2025 Pumatics. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Pumatics. All rights reserved.</p>
         </div>
       </div>
     </footer>

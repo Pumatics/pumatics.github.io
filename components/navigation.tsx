@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { site } from "@/lib/site"
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
 
@@ -14,7 +15,7 @@ export default function Navigation() {
         {/* Logo */}
         <Link href="/" className="flex items-center">
             <img
-            src="https://i.imgur.com/ICLXFWI.png"
+            src={site.images.logoNav}
             alt="Logo" width={50} height={50} />
         </Link>
 
@@ -37,7 +38,7 @@ export default function Navigation() {
         </div>
 
         <Button asChild className="hidden md:block bg-orange-500 hover:bg-orange-600 text-white px-4 lg:px-6 py-2 rounded-full font-semibold text-sm lg:text-base">
-          <a href="https://app.acuityscheduling.com/schedule.php?owner=21389694" target="_blank" rel="noopener noreferrer">
+          <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer">
             SCHEDULE APPOINTMENT
           </a>
         </Button>
@@ -94,7 +95,7 @@ export default function Navigation() {
               className="w-full bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-semibold mt-4"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <a href="https://app.acuityscheduling.com/schedule.php?owner=21389694" target="_blank" rel="noopener noreferrer">
+              <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer">
                 SCHEDULE APPOINTMENT
               </a>
             </Button>

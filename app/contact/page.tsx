@@ -1,6 +1,7 @@
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
+import { mailtoHref, site, telHref } from "@/lib/site"
 
 export default function ContactPage() {
   return (
@@ -21,7 +22,7 @@ export default function ContactPage() {
               <h2 className="text-2xl font-bold mb-4 underline">Book a Session</h2>
               <p className="text-lg mb-6">Schedule your tutoring session here.</p>
               <Button asChild className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-semibold">
-                <a href="https://app.acuityscheduling.com/schedule.php?owner=21389694" target="_blank" rel="noopener noreferrer">
+                <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer">
                   SCHEDULE APPOINTMENT
                 </a>
               </Button>
@@ -38,7 +39,11 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="font-semibold">Email</p>
-                    <p>info@pumatics.com</p>
+                    <p>
+                      <a href={mailtoHref} className="underline hover:text-orange-200">
+                        {site.email}
+                      </a>
+                    </p>
                   </div>
                 </div>
 
@@ -48,7 +53,11 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="font-semibold">Phone</p>
-                    <p>(650) 209-0336</p>
+                    <p>
+                      <a href={telHref} className="underline hover:text-orange-200">
+                        {site.phoneDisplay}
+                      </a>
+                    </p>
                   </div>
                 </div>
               </div>

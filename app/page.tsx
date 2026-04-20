@@ -1,6 +1,7 @@
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
+import { site } from "@/lib/site"
 
 export default function HomePage() {
   return (
@@ -20,7 +21,7 @@ export default function HomePage() {
             <div className="relative">
               <div className="w-64 h-64 md:w-80 md:h-80 bg-blue-400 rounded-full flex items-center justify-center">
                 <img
-                  src="https://i.imgur.com/EXje6lM.jpeg"
+                  src={site.images.homeHero}
                   alt="Student with molecular model"
                   className="w-56 h-56 md:w-72 md:h-72 object-cover rounded-full"
                 />
@@ -37,7 +38,7 @@ export default function HomePage() {
           <div className="flex-shrink-0 order-2 lg:order-1">
             <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden mx-auto">
               <img
-                src="https://i.imgur.com/yHsEEhy.jpeg"
+                src={site.images.homeWelcome}
                 alt="Student in classroom"
                 className="w-full h-full object-cover"
               />
@@ -106,7 +107,7 @@ export default function HomePage() {
                   Ready to start tutoring? Schedule your session now.
                 </p>
                 <Button asChild className="bg-orange-500 hover:bg-orange-600 text-white px-6 md:px-8 py-3 rounded-full font-semibold w-full sm:w-auto text-sm md:text-base">
-                  <a href="https://app.acuityscheduling.com/schedule.php?owner=21389694" target="_blank" rel="noopener noreferrer">
+                  <a href={site.bookingUrl} target="_blank" rel="noopener noreferrer">
                     SCHEDULE APPOINTMENT
                   </a>
                 </Button>

@@ -1,5 +1,6 @@
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
+import { site } from "@/lib/site"
 
 export default function TutorsPage() {
   return (
@@ -15,7 +16,7 @@ export default function TutorsPage() {
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <div className="flex flex-col items-center text-center">
                 <img
-                  src="https://i.imgur.com/fZwlRPC.jpeg"
+                  src={site.images.tutorBoris}
                   alt="Boris S."
                   className="w-64 h-64 object-cover rounded-lg mb-6"
                 />
@@ -40,7 +41,7 @@ export default function TutorsPage() {
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <div className="flex flex-col items-center text-center">
                 <img
-                  src="https://i.imgur.com/edPrjqD.jpeg"
+                  src={site.images.tutorEmily}
                   alt="Emily B."
                   className="w-64 h-64 object-cover rounded-lg mb-6"
                 />
@@ -55,7 +56,7 @@ export default function TutorsPage() {
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <div className="flex flex-col items-center text-center">
                 <img
-                  src="https://i.imgur.com/t4V38GL.jpeg"
+                  src={site.images.tutorGeorge}
                   alt="George C."
                   className="w-64 h-64 object-cover rounded-lg mb-6"
                 />
@@ -71,8 +72,8 @@ export default function TutorsPage() {
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <div className="flex flex-col items-center text-center">
                 <img
-                  src="https://i.imgur.com/hVIQY5T.jpeg"
-                  alt="Emily B."
+                  src={site.images.tutorJerry}
+                  alt="Jerry V."
                   className="w-64 h-64 object-cover rounded-lg mb-6"
                 />
                 <h3 className="text-2xl font-bold text-indigo-800 mb-2">Jerry V.</h3>
@@ -86,8 +87,8 @@ export default function TutorsPage() {
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <div className="flex flex-col items-center text-center">
                 <img
-                  src="https://i.imgur.com/1b119i6.jpeg"
-                  alt="Emily B."
+                  src={site.images.tutorVicky}
+                  alt="Vicky V."
                   className="w-64 h-64 object-cover rounded-lg mb-6"
                 />
                 <h3 className="text-2xl font-bold text-indigo-800 mb-2">Vicky V.</h3>

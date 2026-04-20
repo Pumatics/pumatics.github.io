@@ -1,5 +1,6 @@
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
+import { site } from "@/lib/site"
 
 export default function TermsPage() {
   return (
@@ -40,8 +41,8 @@ export default function TermsPage() {
               <p className="text-gray-700 leading-relaxed">
                 Clients must cancel or reschedule their appointments at least 4 hours before the scheduled start time.
                 Notice within this timeframe is necessary to maintain eligibility for rescheduling or a refund. In
-                emergencies or other extenuating circumstances, clients may contact us at (650) 209-0336 or via email at
-                info@pumatics.com to request a cancellation or rescheduling. While we will endeavor to accommodate such
+                emergencies or other extenuating circumstances, clients may contact us at {site.phoneDisplay} or via
+                email at {site.email} to request a cancellation or rescheduling. While we will endeavor to accommodate such
                 requests, no guarantees of availability can be extended. Clients will not face penalties for
                 unsuccessful cancellation attempts resulting from internal communication errors.
               </p>
