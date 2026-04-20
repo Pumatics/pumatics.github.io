@@ -7,6 +7,7 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Pumatics',
   description: 'Professional tutoring services for students of all ages',
+  manifest: '/icons/site.webmanifest',
   icons: {
     icon: [
       { url: '/icons/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
