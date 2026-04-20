@@ -65,7 +65,7 @@ export default function ContactPage() {
           <div className="flex-1 flex justify-end">
             <div className="w-80 h-80 rounded-full overflow-hidden">
               <img
-                src="/keyboard-with-contact-us-keys-highlighted-in-blue.png"
+                src="/images/keyboard-with-contact-us-keys-highlighted-in-blue.png"
                 alt="Contact keyboard"
                 className="w-full h-full object-cover"
               />

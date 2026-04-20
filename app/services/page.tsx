@@ -37,7 +37,7 @@ export default function ServicesPage() {
               <div className="bg-indigo-800 rounded-lg p-4 md:p-6 transition-all duration-300">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-4">
                   <img
-                    src="/middle-school-students-studying-math.png"
+                    src="/images/middle-school-students-studying-math.png"
                     alt="Middle school students"
                     className={`rounded-lg object-cover transition-all duration-300 mx-auto sm:mx-0 ${
                       expandedCards.includes("middle-school")
@@ -76,7 +76,7 @@ export default function ServicesPage() {
               <div className="bg-indigo-800 rounded-lg p-4 md:p-6 transition-all duration-300">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-4">
                   <img
-                    src="/high-school-geometry-tools-compass.png"
+                    src="/images/high-school-geometry-tools-compass.png"
                     alt="High school geometry"
                     className={`rounded-lg object-cover transition-all duration-300 mx-auto sm:mx-0 ${
                       expandedCards.includes("high-school") ? "w-24 h-24 md:w-32 md:h-32" : "w-16 h-16 md:w-20 md:h-20"
@@ -114,7 +114,7 @@ export default function ServicesPage() {
               <div className="bg-indigo-800 rounded-lg p-4 md:p-6 transition-all duration-300">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-4">
                   <img
-                    src="/math-equations-on-chalkboard.png"
+                    src="/images/math-equations-on-chalkboard.png"
                     alt="Math equations"
                     className={`rounded-lg object-cover transition-all duration-300 mx-auto sm:mx-0 ${
                       expandedCards.includes("ap-honors") ? "w-24 h-24 md:w-32 md:h-32" : "w-16 h-16 md:w-20 md:h-20"
@@ -173,7 +173,7 @@ export default function ServicesPage() {
               <div className="bg-indigo-800 rounded-lg p-4 md:p-6 transition-all duration-300">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-4">
                   <img
-                    src="/person-coding.png"
+                    src="/images/person-coding.png"
                     alt="Programming"
                     className={`rounded-lg object-cover transition-all duration-300 mx-auto sm:mx-0 ${
                       expandedCards.includes("programming") ? "w-24 h-24 md:w-32 md:h-32" : "w-16 h-16 md:w-20 md:h-20"
@@ -206,7 +206,7 @@ export default function ServicesPage() {
               <div className="bg-indigo-800 rounded-lg p-4 md:p-6 transition-all duration-300">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-4">
                   <img
-                    src="/college-student-with-books.png"
+                    src="/images/college-student-with-books.png"
                     alt="College student"
                     className={`rounded-lg object-cover transition-all duration-300 mx-auto sm:mx-0 ${
                       expandedCards.includes("college") ? "w-24 h-24 md:w-32 md:h-32" : "w-16 h-16 md:w-20 md:h-20"
@@ -245,7 +245,7 @@ export default function ServicesPage() {
               <div className="bg-indigo-800 rounded-lg p-4 md:p-6 transition-all duration-300">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-4">
                   <img
-                    src="/student-taking-test-with-pencil.png"
+                    src="/images/student-taking-test-with-pencil.png"
                     alt="Test preparation"
                     className={`rounded-lg object-cover transition-all duration-300 mx-auto sm:mx-0 ${
                       expandedCards.includes("test-prep") ? "w-24 h-24 md:w-32 md:h-32" : "w-16 h-16 md:w-20 md:h-20"
