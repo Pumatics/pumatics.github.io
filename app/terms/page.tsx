@@ -1,8 +1,10 @@
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
+import { currentPackageRefundExample, formatUSD, packageValidityTerms } from "@/lib/pricing"
 import { site } from "@/lib/site"
 
 export default function TermsPage() {
+  const example = currentPackageRefundExample()
   return (
     <div className="min-h-screen">
       <Navigation />
@@ -75,10 +77,12 @@ export default function TermsPage() {
                 rate from the total package cost.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                For instance, if a client acquires an AP & Honors Online Student Package (10 Hours) for $720 and
-                subsequently requests a refund after utilizing three hours, the calculation would proceed as follows:
-                the cost of three sessions (3 x $80 = $240) would be subtracted from the total, yielding a refund of
-                $720 - $240 = $480.
+                For instance, if a client acquires an {example.name} package ({example.hours} hours) for{" "}
+                {formatUSD(example.packagePrice)} and subsequently requests a refund after utilizing {example.usedHours}{" "}
+                hours, the calculation would proceed as follows: the cost of {example.usedHours} hours (
+                {example.usedHours} × {formatUSD(example.hourly)} = {formatUSD(example.usedCost)}) would be subtracted
+                from the total, yielding a refund of {formatUSD(example.packagePrice)} − {formatUSD(example.usedCost)} ={" "}
+                {formatUSD(example.refund)}.
               </p>
             </section>
 
@@ -114,10 +118,7 @@ export default function TermsPage() {
 
             <section>
               <h2 className="text-2xl font-bold text-indigo-800 mb-4">Package Expiration</h2>
-              <p className="text-gray-700 leading-relaxed">
-                Please note that all packages will expire 365 days from the date the package is added to the client's
-                account, which may differ slightly from the purchase date.
-              </p>
+              <p className="text-gray-700 leading-relaxed">{packageValidityTerms}</p>
             </section>
           </div>
         </div>
