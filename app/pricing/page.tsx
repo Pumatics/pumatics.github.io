@@ -94,13 +94,13 @@ export default function PricingPage() {
 
             <div className="space-y-4 md:space-y-6 text-gray-700">
               <div className="text-sm md:text-base">
-                <span className="font-semibold text-indigo-800">At booking:</span> All sessions booked through Acuity
-                scheduling system are payable at the time of booking.
+                <span className="font-semibold text-indigo-800">Single sessions:</span> Sessions booked in Acuity are
+                paid at the time of booking.
               </div>
               <div className="text-sm md:text-base">
-                <span className="font-semibold text-indigo-800">Packages:</span> Package payments are accepted via
-                Venmo, Cash App, and Zelle. After booking, you'll receive an invoice with detailed payment instructions
-                and your unique scheduling code.
+                <span className="font-semibold text-indigo-800">Packages:</span> You will receive an invoice first. Pay
+                by Venmo, Cash App, or Zelle. After payment is confirmed, you get an email with your scheduling code,
+                then you can book.
               </div>
               <div className="text-sm md:text-base">
                 <span className="font-semibold text-indigo-800">Validity:</span> {packageValidityPricing}

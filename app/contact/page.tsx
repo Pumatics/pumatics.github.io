@@ -62,12 +62,6 @@ export default function ContactPage() {
                 </div>
               </div>
             </div>
-
-            {/* Have Questions */}
-            <div className="mt-12">
-              <h2 className="text-2xl font-bold mb-4">Have Questions?</h2>
-              <p className="text-lg">Fill out the form below and we'll get back to you shortly.</p>
-            </div>
           </div>
 
           {/* Contact Image */}
