@@ -106,12 +106,10 @@ export default function PricingPage() {
                 <span className="font-semibold text-indigo-800">Validity:</span> {packageValidityPricing}
               </div>
               <div className="text-sm md:text-base">
-                <span className="font-semibold text-indigo-800">Refunds:</span> For detailed refund information, please
-                refer to our{" "}
-                <Link href="/terms" className="text-indigo-600 hover:text-indigo-800 underline">
-                  Terms and Conditions
+                <span className="font-semibold text-indigo-800">Refunds:</span>{" "}
+                <Link href="/terms#package-refunds" className="text-indigo-600 hover:text-indigo-800 underline">
+                  Unused package hours
                 </Link>
-                .
               </div>
             </div>
           </div>
