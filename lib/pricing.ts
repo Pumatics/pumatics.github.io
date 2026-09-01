@@ -12,21 +12,12 @@ export type PackageRow = {
   price: number
 }
 
-export type PackageTier = {
+export type CourseLevel = {
   id: string
   name: string
   hourly: number
   packages: PackageRow[]
 }
-
-export const standardRates: { label: string; hourly: number }[] = [
-  { label: "Middle School courses", hourly: 76 },
-  { label: "High School (Non-AP/Honors) courses", hourly: 76 },
-  { label: "AP & Honors courses", hourly: 84 },
-  { label: "College-level courses", hourly: 84 },
-  { label: "Programming courses", hourly: 84 },
-  { label: "Test Preparation", hourly: 105 },
-]
 
 const middleSchoolHighSchoolPackages: PackageRow[] = [
   { hours: 5, price: 360 },
@@ -42,6 +33,7 @@ const apHonorsPackages: PackageRow[] = [
   { hours: 30, price: 1750 },
 ]
 
+/** Same 5/10/20 as AP & Honors; 30-hour is $1,760 on purpose, not AP’s $1,750. */
 const collegeProgrammingPackages: PackageRow[] = [
   { hours: 5, price: 400 },
   { hours: 10, price: 760 },
@@ -56,7 +48,8 @@ const testPrepPackages: PackageRow[] = [
   { hours: 30, price: 2210 },
 ]
 
-export const packageTiers: PackageTier[] = [
+/** Single list: hourly rate and packages stay together. */
+export const courseLevels: CourseLevel[] = [
   { id: "middle-school", name: "Middle School courses", hourly: 76, packages: middleSchoolHighSchoolPackages },
   {
     id: "high-school",
@@ -69,6 +62,13 @@ export const packageTiers: PackageTier[] = [
   { id: "programming", name: "Programming courses", hourly: 84, packages: collegeProgrammingPackages },
   { id: "test-prep", name: "Test Preparation", hourly: 105, packages: testPrepPackages },
 ]
+
+export const standardRates = courseLevels.map((level) => ({
+  label: level.name,
+  hourly: level.hourly,
+}))
+
+export const packageTiers = courseLevels
 
 export function formatUSD(amount: number): string {
   return amount.toLocaleString("en-US", { style: "currency", currency: "USD" })
@@ -88,7 +88,7 @@ export const refundExampleTierId = "ap-honors"
 export const refundExamplePackageHours = 10
 
 export function currentPackageRefundExample() {
-  const tier = packageTiers.find((t) => t.id === refundExampleTierId)
+  const tier = courseLevels.find((t) => t.id === refundExampleTierId)
   const pkg = tier?.packages.find((p) => p.hours === refundExamplePackageHours)
   if (!tier || !pkg) {
     throw new Error("Refund example package is missing from pricing data")

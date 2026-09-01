@@ -15,7 +15,7 @@ export default function ServicesPage() {
     <div className="min-h-screen bg-gray-50">
       <Navigation />
 
-      <main className="pt-12 md:pt-20">
+      <main>
         {/* Header Section */}
         <section className="py-12 md:py-16 px-4 md:px-6">
           <div className="max-w-4xl mx-auto text-center">
@@ -145,6 +145,7 @@ export default function ServicesPage() {
                           <li>• Honors Precalculus / Math Analysis</li>
                           <li>• Honors Physics</li>
                           <li>• Honors Chemistry</li>
+                          <li>• Honors Biology</li>
                         </ul>
                       </div>
                       <div>
